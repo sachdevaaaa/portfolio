@@ -95,7 +95,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am a Fullstack Web Developer and Designer, currenlty pursuing my enigneering degree from Delhi Technological University (formerly known as DCE). i believe myself to be a life long learner and thus always try to keep updating my skills. In my free time, I love to sketch and practice boxing and calisthenics.`,
+  description: `I am a Fullstack Web Developer and Designer, currently pursuing my enigneering degree from Delhi Technological University (formerly known as DCE). I believe myself to be a life long learner and thus always try to keep updating my skills. In my free time, I love to sketch and practice boxing and calisthenics.`,
   aboutItems: [
     {label: 'Location', text: 'New Delhi, India', Icon: MapIcon},
     {label: 'Age', text: '20', Icon: CalendarIcon},
@@ -186,40 +186,40 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Website Redesign',
+    title: 'HyerCode Website',
     description: 'Helped Redesign their Website.',
     url: 'https://hypercode.tech/',
     image: porfolioImage1,
   },
  
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
+    title: 'KeepWellMantras',
+    description: '',
     url: 'https://keepwellmantras.com/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
+    title: 'Upschol',
+    description: '',
     url: 'https://upschol.com/',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
+    title: 'smv',
+    description: '',
     url: 'https://www.dtusupermileage.in/',
     image: porfolioImage5,
   },
 
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
+    title: 'Auslink',
+    description: '.',
     url: 'https://stage.efiles.com.au/sign-in',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
+    title: 'Art.devta',
+    description: '',
     url: 'https://www.instagram.com/art.devta/',
     image: porfolioImage8,
   },
