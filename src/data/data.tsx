@@ -240,7 +240,7 @@ export const education: TimelineItem[] = [
     date: '2022',
     location: 'Lancers Convent School',
     title: 'School',
-    content: <p>I learned a lot of life skills, participating and achieveing positions in various sports events, Debate Competitions etc.</p>,
+    content: <p>I learned a lot of life skills, participating and achieving positions in various sports events, Debate Competitions etc.</p>,
   },
 ];
 
@@ -251,7 +251,7 @@ export const experience: TimelineItem[] = [
     title: 'FullTime Intern',
     content: (
       <p>
-       I worked for several clientsa as a part of the company, I learnt a lot of skills alogn with time management and dealing with clients.
+       I worked for several clients as a part of the company, I learnt a lot of skills along with time management and dealing with clients.
       </p>
     ),
   },
