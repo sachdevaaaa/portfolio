@@ -8,13 +8,13 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
+
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import porfolioImage1 from '../images/portfolio/portfolio-111.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Divyam Naveen Sachdeva',
+  description: "",
 };
 
 /**
@@ -69,31 +69,30 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Hello! I'm Divyam Naveen Sachdeva.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a New Delhi based <strong className="text-stone-100">Full Stack Web Developer</strong>, currently working as an intern
+        at Cosmic Technologies pvt Ltd
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
         plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
         <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
+      </p> */}
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
+      href: `#${SectionId.Resume}`,
+      text: 'Resume →',
+      primary: false,
+      
     },
     {
       href: `#${SectionId.Contact}`,
-      text: 'Contact',
+      text: 'Contact →',
       primary: false,
     },
   ],
@@ -104,16 +103,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a Fullstack Web Developer and Designer, currenlty pursuing my enigneering degree from Delhi Technological University (formerly known as DCE). i believe myself to be a life long learner and thus always try to keep updating my skills. In my free time, I love to sketch and practice boxing and calisthenics.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'New Delhi, India', Icon: MapIcon},
+    {label: 'Age', text: '20', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Sketching, Boxing, Calisthenics', Icon: SparklesIcon},
+    {label: 'Study', text: 'Delhi Technological University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Cosmic Technologies Ltd', Icon: BuildingOffice2Icon},
+    {label: 'Freelance Work', text: 'Open', Icon: SparklesIcon}
   ],
 };
 
@@ -129,12 +127,12 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'Hindi',
+        level: 10,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Punjabi',
+        level: 8,
       },
     ],
   },
@@ -151,7 +149,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'GraphQL',
-        level: 6,
+        level: 7,
       },
     ],
   },
@@ -181,7 +179,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Flutter',
-        level: 4,
+        level: 3,
       },
       {
         name: 'Swift',
@@ -196,71 +194,44 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Website Redesign',
+    description: 'Helped Redesign their Website.',
+    url: 'https://hypercode.tech/',
     image: porfolioImage1,
   },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
+ 
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://keepwellmantras.com/',
     image: porfolioImage3,
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://upschol.com/',
     image: porfolioImage4,
   },
   {
     title: 'Project title 5',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://www.dtusupermileage.in/',
     image: porfolioImage5,
   },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
+
   {
     title: 'Project title 7',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://stage.efiles.com.au/sign-in',
     image: porfolioImage7,
   },
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    url: 'https://www.instagram.com/art.devta/',
     image: porfolioImage8,
   },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+  
 ];
 
 /**
@@ -268,39 +239,37 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2022-26',
+    location: 'Delhi Technological University',
+    title: 'Bachellors in Technology',
+    content: <p>pursuing major degree in Mechanical Eng. and my minor in Data Science Eng.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '2022',
+    location: 'Lancers Convent School',
+    title: 'School',
+    content: <p>I learned a lot of life skills, participating and achieveing positions in various sports events, Debate Competitions etc.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'may, 2024-',
+    location: 'Cosmic Technologies',
+    title: 'FullTime Intern',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+       I worked for several clientsa as a part of the company, I learnt a lot of skills alogn with time management and dealing with clients.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: '2024',
+    location: 'Speed Motor Vehicles, Team DTU supermileagae',
+    title: 'Head of Corporate and Design',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        
       </p>
     ),
   },
@@ -313,20 +282,11 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Arjun Anand, Former Head, Team DTU supermileage',
+      text: 'Divyam was very professional and easy to work with. the website turned out to be even better than our expectations. Great work!',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
-    {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
-    },
-    {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
-    },
+    
   ],
 };
 
@@ -336,27 +296,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'contact me',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'divyamsachdevaa@gmail.com',
+      href: 'mailto:divyamsachdevaa@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'New Delhi, India',
+      href: 'https://www.google.com/maps/d/u/0/viewer?hl=en&ie=UTF8&t=h&source=embed&msa=0&ll=28.75024999999999%2C77.117425&spn=0.007995%2C0.009109&z=17&mid=1rQQ1fphljUW4dQvPCGxo6EU_vO4',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
-      type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: '@divyamsachdevaa',
+      href: 'https://www.instagram.com/divyamsachdevaa/',
     },
   ],
 };
@@ -365,9 +320,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/divyam-naveen-b4a32a25b/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/divyamsachdevaa/'},
+  {label: 'Youtube', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
